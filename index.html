@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>TopGreen - ogrodzenia panelowe </title>
+  <link rel="icon" href="./assets/img/favicon_2.ico" type="image/x-icon"/>
+  <!--Bootstrap init-->
+  <link href="./node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+  <link href="./node_modules/bootstrap/dist/css/bootstrap-grid.css" rel="stylesheet">
+  <link href="./node_modules/bootstrap/dist/css/bootstrap-reboot.css" rel="stylesheet">
+  <!--  Font awesome-->
+  <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+
+  <!--  Vue js -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+
+  <style>
+    body {
+      /*background-color: #b5b5b7;*/
+      background-color: #f8f9fa;
+      /*background-color: #354c63;*/
+    }
+    /*.overlay {*/
+    /*  position: relative;*/
+    /*  background-color: gray;*/
+    /*  background: url("./assets/img/example_fence_v3.jpg") no-repeat center center;*/
+    /*  padding-top: 7rem;*/
+    /*  padding-bottom: 7rem;*/
+    /*  height: 100%;*/
+    /*  width: 100%;*/
+    /*  top: 0;*/
+    /*  left: 0;*/
+    /*  opacity: 0.8;*/
+    /*}*/
+    .nav-item{
+      cursor: pointer;
+    }
+  </style>
+
+</head>
+<body>
+
+<h1> INIT </h1>
+
+<nav class="navbar navbar-expand-md  static-top fixed-top" style="background-color: #354c63; ">
+  <a class="navbar-brand" href="#" style="margin-left: 50px;">
+    <img src="./assets/img/logo.png" height="50px" width="150px">
+  </a>
+  <button style="border-color: black" class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-expanded="false" aria-controls="collapsibleNavbar">
+    <span class="navbar-toggler-icon">
+      <i class="fa fa-bars" style="color:#fff; font-size:28px;"></i>
+    </span>
+  </button>
+
+  <div class="container">
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item" data-scrollto="welcome_card" >
+          <a class="nav-link text-success font-weight-bold" href="/" >Strona głowna</a>
+        </li>
+        <li class="nav-item" data-scrollto="oferta">
+          <a class="nav-link text-success font-weight-bold" href="/">Oferta</a>
+        </li>
+        <li class="nav-item" data-scrollto="about_us">
+          <a class="nav-link text-success font-weight-bold" >O nas</a>
+        </li>
+        <li class="nav-item" data-scrollto="contact">
+          <a class="nav-link text-success font-weight-bold" >Kontakt</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!--navbar-light bg-light-->
+<nav class="navbar navbar-expand-md sticky-top" style="background-color: #354c63; " hidden>
+  <a class="navbar-brand" href="#" style="margin-left: 50px;">
+    <!--      Start Bootstrap-->
+    <img src="./assets/img/logo.png" height="50px" width="150px">
+  </a>
+  <div class="container">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-expanded="false" aria-controls="collapsibleNavbar">
+      <span class="navbar-toggler-icon"> aaa </span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav ml-auto" id="top_menu">
+        <li class="nav-item" data-scrollto="welcome_card" >
+          <a class="nav-link text-success font-weight-bold" href="/" >Strona głowna</a>
+        </li>
+        <li class="nav-item" data-scrollto="oferta">
+          <a class="nav-link text-success font-weight-bold" href="/">Oferta</a>
+        </li>
+        <li class="nav-item" data-scrollto="about_us">
+          <a class="nav-link text-success font-weight-bold" >O nas</a>
+        </li>
+        <li class="nav-item" data-scrollto="contact">
+          <a class="nav-link text-success font-weight-bold" >Kontakt</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<style>
+
+  header.masthead {
+    position: relative;
+    background-color: #343a40;
+    background: url("./assets/img/example_fence_v3.jpg") no-repeat center center;
+    /*background: url("./assets/img/bg-masthead.jpg") no-repeat center center;*/
+    background-size: cover;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    border-radius: 3px;
+  }
+  header.masthead .overlay {
+    position: absolute;
+    background-color: #212529;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.1;
+  }
+
+  header.masthead h1 {
+    font-size: 2rem;
+  }
+
+  .vertical-line {
+    letter-spacing: -7px;
+  }
+
+  .nav-link > a hover {
+    color: red;
+  }
+
+</style>
+
+<header class="masthead text-white text-center" >
+  <div class="overlay">  </div>
+  <div class="container">
+      <div class="row">
+        <div class="col-xl-9 mx-auto">
+          <h1 class="mb-5"><strong> Top green </strong></h1>
+          <h3>
+            <span class="vertical-line"> ------------ </span>
+            &nbsp;&nbsp;ogrodzenia panelowe&nbsp;
+            <span class="vertical-line"> ------------ </span>
+          </h3>
+        </div>
+      </div>
+    </div>
+</header>
+
+<style>
+  .showcase .showcase-img {
+    min-height: 35rem;
+    background-size: cover;
+  }
+  .showcase-1 {
+    border-radius: 2rem;
+    background-image: url('./assets/img/bg_showcase_1.jpg');
+  }
+  .showcase-2 {
+    background-image: url('./assets/img/bg_showcase_2.jpg');
+  }
+
+  .features-icons-icon:hover {
+      color: red;
+      transition: 500ms;
+      cursor: pointer;
+  }
+
+  .test {
+    color: #28a745;
+  }
+
+  .test :hover {
+    text-decoration: none;
+    transition: 500ms;
+    color: #1e672f;
+  }
+</style>
+
+
+<section class="features-icons bg-light text-center mt-2" >
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4">
+        <!--        <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">-->
+        <div class="features-icons-icon d-flex justify-content-center">
+          <i class="fas fa-phone mr-3 " style="font-size: 64px;"></i>
+        </div>
+        <h3> Zadzwoń </h3>
+        <p class="lead mb-0 font-weight-bold test">
+          <strong><a class="test" href="tel:511201919" target="_blank">+ 48 511 201 919</a></strong>
+        </p>
+        <!--        </div>-->
+      </div>
+      <div class="col-lg-4">
+        <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+          <div class="features-icons-icon d-flex justify-content-center">
+            <i class="fas fa-envelope mr-3 " style="font-size: 64px;"></i>
+          </div>
+          <h3>Napisz do nas</h3>
+          <p class="lead mb-0 font-weight-bold test">
+            <a class="test" href="mailto:email@topgreen.com" target="_blank">email@topgreen.com</a>
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-4 about-us-details">
+        <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+          <div class="features-icons-icon d-flex justify-content-center">
+            <i class="fab fa-facebook-f mr-3 " style="font-size: 64px;"></i>
+          </div>
+          <h3>Sprawdź nas na Facebook'u</h3>
+          <p class="lead mb-0 test font-weight-bold">
+            <a class="test" href="https://www.facebook.com/TopGreen.ogrodzenia" target="_blank" > /TopGreen.ogrodzenia </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="showcase">
+  <div class="container text-center">
+    <h1>
+      <span class="vertical-line"> ----- </span>
+        &nbsp;O nas
+      <span class="vertical-line"> ----- </span>
+    </h1>
+  </div>
+
+  <style>
+    div > img {
+      width: auto;
+      height : auto;
+      max-height: 100%;
+      max-width: 100%;
+    }
+  </style>
+
+  <div class="container-fluid p-0">
+    <div class="row no-gutters">
+<!--      <div class="col-lg-6 order-lg-2 text-white showcase-img showcase-4"> </div>-->
+      <div class="col-lg-6 order-lg-2 text-white showcase-img showcase-4" style="overflow: hidden;">
+        <img src="./assets/img/bg_showcase_1.jpg">
+      </div>
+      <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+        <h2>Fully Responsive Design</h2>
+        <p class="lead mb-0">When you use a theme created by Start Bootstrap, you know that the theme will look great on any device, whether it's a phone, tablet, or desktop the page will behave responsively!</p>
+      </div>
+    </div>
+    <div class="row no-gutters">
+      <div class="col-lg-6 text-white showcase-img showcase-4" style="overflow: hidden;">
+        <img src="./assets/img/bg_showcase_2.jpg">
+      </div>
+
+<!--      <div class="col-lg-6 text-white showcase-img showcase-2"></div>-->
+      <div class="col-lg-6 my-auto showcase-text">
+        <h2>Updated For Bootstrap 4</h2>
+        <p class="lead mb-0">Newly improved, and full of great utility classes, Bootstrap 4 is leading the way in mobile responsive web development! All of the themes on Start Bootstrap are now using Bootstrap 4!</p>
+      </div>
+    </div>
+    <div class="row no-gutters">
+      <div class="col-lg-6 order-lg-2 text-white showcase-img showcase-1"></div>
+      <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+        <h2>Easy to Use &amp; Customize</h2>
+        <p class="lead mb-0">Landing Page is just HTML and CSS with a splash of SCSS for users who demand some deeper customization options. Out of the box, just add your content and images, and your new landing page will be ready to go!</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer class="page-footer font-small mdb-color pt-4">
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left">
+
+    <!-- Footer links -->
+    <div class="row text-center text-md-left mt-3 pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h6 class="text-uppercase mb-4 font-weight-bold"><strong>Top Green </strong> - ogrodzenia </h6>
+        <p> Krótkie podsumowanie firmy </p>
+      </div>
+
+      <hr class="w-100 clearfix d-md-none">
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+        <h6 class="text-uppercase mb-4 font-weight-bold"> Sprwadź </h6>
+        <p>
+          <a href="#!">Your Account</a>
+        </p>
+        <p>
+          <a href="#!">Become an Affiliate</a>
+        </p>
+        <p>
+          <a href="#!">Shipping Rates</a>
+        </p>
+        <p>
+          <a href="#!">Help</a>
+        </p>
+      </div>
+
+      <!-- Grid column -->
+      <hr class="w-100 clearfix d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+        <p>
+          <i class="fas fa-home mr-3"></i> Opoczno, Woj. Łódzkie 26-300 </p>
+        <p>
+          <i class="fas fa-envelope mr-3 "></i> email@topgreen.com</p>
+        <p>
+          <i class="fas fa-phone mr-3"></i> <strong>+ 48 511 201 919</strong></p>
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Footer links -->
+
+    <hr>
+    <div class="row d-flex align-items-center">
+      <div class="col-md-7 col-lg-8">
+        <p class="text-center text-md-left">© 2020 Copyright:
+          <a href="https://topgreen.com/">
+            <strong> TopGreen</strong>
+          </a>
+        </p>
+      </div>
+      <div class="col-md-5 col-lg-4 ml-lg-0">
+        <div class="text-center text-md-right">
+          <h6 class="text-uppercase mb-4 font-weight-bold">Sprawdź nas na:</h6>
+          <ul class="list-unstyled list-inline">
+            <li class="list-inline-item">
+              <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                <i class="f"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="content-modal"></div>
+<script src="./assets/js/app.js"></script>
+
+</body>
+
+</html>
