@@ -1,0 +1,109 @@
+
+body {
+    background-color: #f8f9fa;
+    /*background-color: #EDF5E1;*/
+    /*background-color: #354c63;*/
+
+    /*background-color: #618930;*/
+    /*background-color: #86C232;*/
+    /*background-color: #222629;*/
+    /*background-color: #474B4f;*/
+    /*background-color: #6B6E71;*/
+
+}
+/*.overlay {*/
+/*  position: relative;*/
+/*  background-color: gray;*/
+/*  background: url("./assets/img/example_fence_v3.jpg") no-repeat center center;*/
+/*  padding-top: 7rem;*/
+/*  padding-bottom: 7rem;*/
+/*  height: 100%;*/
+/*  width: 100%;*/
+/*  top: 0;*/
+/*  left: 0;*/
+/*  opacity: 0.8;*/
+/*}*/
+.nav-item{
+    cursor: pointer;
+}
+
+.navbar-bg {
+    /*background-color: #618930;*/
+    /*background-color: #86C232;*/
+    background-color: #222629;
+    /*background-color: #474B4f;*/
+    /*background-color: #6B6E71;*/
+}
+.nav-active {
+    border-bottom: 2px solid green;
+}
+
+header.masthead {
+    position: relative;
+    background-color: #343a40;
+    /*background: url("./assets/img/example_fence_v3.jpg") no-repeat center center;*/
+    background: url("../img/example_fence_v3.jpg") no-repeat center center;
+    /*background: url("./assets/img/bg-masthead.jpg") no-repeat center center;*/
+    background-size: cover;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    border-radius: 3px;
+}
+header.masthead .overlay {
+    position: absolute;
+    background-color: #212529;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.1;
+}
+
+header.masthead h1 {
+    font-size: 2rem;
+}
+
+.vertical-line {
+    letter-spacing: -7px;
+}
+
+.nav-link > a hover {
+    color: red;
+}
+
+
+div > img {
+    width: auto;
+    height : auto;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+
+.showcase .showcase-img {
+    min-height: 35rem;
+    background-size: cover;
+}
+.showcase-1 {
+    border-radius: 2rem;
+    background-image: url('../img/bg_showcase_1.jpg');
+}
+.showcase-2 {
+    background-image: url('../img/bg_showcase_2.jpg');
+}
+
+.features-icons-icon:hover {
+    color: red;
+    transition: 500ms;
+    cursor: pointer;
+}
+
+.test {
+    color: #28a745;
+}
+
+.test :hover {
+    text-decoration: none;
+    transition: 500ms;
+    color: #1e672f;
+}
